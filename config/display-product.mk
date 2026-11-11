@@ -194,15 +194,15 @@ endif
 endif
 
 ifeq ($(TARGET_USES_YCRCB_CAMERA_ENCODE),true)
-$(call soong_config_set,gralloc,uses_ycrcb_camera_encode,true)
+$(call soong_config_set_bool,gralloc,uses_ycrcb_camera_encode,true)
 endif
 
 ifeq ($(TARGET_NO_RAW10_CUSTOM_FORMAT),true)
-$(call soong_config_set,gralloc,uses_no_raw10_custom_format,true)
+$(call soong_config_set_bool,gralloc,uses_no_raw10_custom_format,true)
 endif
 
 ifeq ($(TARGET_USES_DRM_PP),true)
-$(call soong_config_set,libsdedrm,uses_dpp_drp,true)
+$(call soong_config_set_bool,libsdedrm,uses_dpp_drp,true)
 endif
 
 # Properties using default value:
